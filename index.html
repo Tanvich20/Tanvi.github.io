@@ -1,0 +1,738 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<script>
+		const {name, setName} = useState('')
+		const {email, setEmail} = useState('')
+		const {subject, setSubject} = useState('')
+		const {message, setMessage} = useState('')
+
+		const handleSubmit = () => {
+			setName('');
+			setSubject('');
+			setEmail('');
+			setMessage('');
+		}
+		function submit_form() {
+			document.formu1.submit();
+			document.formu1.reset(); 
+		}		
+
+	</script>
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" con tent="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/f2245ebf01.js" crossorigin="anonymous"></script>
+        
+        <!-- title of site -->
+        <title>Tanvi's Portfolio</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-css/bootstrap-extended.min.css">
+		<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-fonts/simple-line-icons/style.min.css">
+		<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-css/colors.min.css">
+		<!-- <link rel="stylesheet" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-css/bootstrap.min.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">Tanvi
+								<!-- <img src="logo/logo1.png" style="width: 95px; height: 95px; margin-top: -25px;margin-left: 52px; padding-bottom: 13px;"> -->
+							</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#education">education</a></li>
+			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>hi <span>,</span> I am <br> Tanvi <span>.</span>   </h2>
+							<p>Software Test Engineer</p>
+							<a href="download/Tanvi's_CV.pdf" target="_blank">View Resume</a>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>about me</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+									I am a Software Tester. 
+								</h3>
+								<p>
+									Test Engineer with 6 years of experience conducting manual and automatic testing of various products. Detail-oriented quality inspector tasked with producing reputable products. Coordinated with subject matter experts to reach accurate findings in testing results. Collaborates with cross-functional team members to enhance software package quality.
+								</p>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="single-about-add-info">
+											<h3>email</h3>
+											<p>tanvich20@gmail.com</p>
+										</div>
+									</div>
+									<!-- <div class="col-sm-6">
+										<div class="single-about-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="images/Profile1.jpg" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>
+										<li>
+											<a href="https://github.com/Tanvich20" target="_blank">
+												<i  class="fa fa-github" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="https://twitter.com/Tanvich20" target="_blank">
+												<i  class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="https://www.linkedin.com/in/tanvich20/" target="_blank">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										
+										
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>education</h2>
+			</div>
+			<div class="container">
+				<div class="education-horizontal-timeline">
+					<div class="row">
+						<div class="col-sm-6" style="padding: 0 2px">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2011 - 2013</h2>
+									<h3>High Schooling <span>with </span> Physics, Maths and Computer Science</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Kendriya Vidhayala No.2
+										</h4>
+										<h5>Ferozepur Cantt, Punjab, India</h5>
+										<!-- <p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-6" style="padding: 0 2px">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2013 - 2016</h2>
+									<h3>bachelor <span>of </span> Computer Science</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Dev Samaj College for Women
+										</h4>
+										<h5>Ferozepur City, Punjab, India</h5>
+										<!-- <p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.education-->
+		<!--education end -->
+
+		<!--skills start -->
+		<section id="skills" class="skills">
+			<div class="skill-content">
+				<div class="section-heading text-center">
+					<h2>skills</h2>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fa fa-java fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Languages</h3>
+													<span>(Core Java, SQL)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fab fa-html5 fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Automation Testing Tool</h3>
+													<span>(Selenium/Java)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fab fa-node-js fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Frameworks</h3>
+													<span>(BDD/TDD/TestNg Framework)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fas fa-database fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Database Management System</h3>
+													<span>(MySQL)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fab fa-angular fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Defect Management Tool</h3>
+													<span>(Jira)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fa fa-gear fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>CI/CD Tool</h3>
+													<span>(Jenkins)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fab fa-python fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>project management Tool</h3>
+													<span>Apache Maven</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4"> 
+							<div class="card">
+								<div class="card-content" style="padding: 7%;">
+									<div class="card-body">
+										<div class="media d-flex">
+											<div class="align-self-center">
+												<!-- <div style="width:50%"> -->
+												<i class="fa fa-cloud fa-2x" style="display: table-cell;"></i>
+												<!-- </div> -->
+												<div class="media-body text-right" >
+													<h3>Testing methodology</h3>
+													<span>(Agile,Waterfall)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--skills end -->
+
+		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>Jun 2020 - Jul 2023</h2>
+													<h3>Consultant</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Capgemini limited
+														</h4>
+														<h5>Pune, India</h5>
+														<p class="description">
+															-Wrote and maintained program code to meet system requirements, system designs and technical specifications in accordance with quality accredited standards.</br>
+															<br>-Prepared Re-usable methods to improve productivity and maintainability.</br>
+															<br>-Used Gherkin languages to write features and scenarios.</br>
+															<br>-Developed BDD test scripts using Selenium Web Driver with Cucumber using feature files and writing step definitions.</br>
+															<br>-BDD framework implementing Page objects, Data Driven, Maven using Selenium WebDriver and Core Java.</br>
+															</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2028
+													</h2>
+													<h3>Software Test Engineer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															Infosys Limited
+														</h4>
+														<h5>Pune, India</h5>
+														<p class="description" style = "text-align: initial;">
+														<br>-Analysed the Requirements in BRD documents and clarification raised to our project business analyst.</br>
+														<br>-Wrote Test plans and test scripts, carried out regression testing and used automated test software applications to test the behaviour, functionality of software, and document the results of tests in defect reports and related documentation.</br>
+														<br>-Analysed the failed test cases and raise a defect using JIRA tool. Retested the cases where defect has been raised and updated the status in JIRA.</br>
+														<br>-Attended daily scrum call update meeting and provided timely updates to Test Manager in status meetings.</br>
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														Oct 2016 - Jun 2020
+													</h2>
+													<h3>Software Test Engineer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+							</ul>
+						</div><!--.main-timeline-->
+					</div><!--.experience-content-->
+			</div>
+
+		</section><!--/.experience-->
+		<!--experience end -->
+
+		<!--profiles start -->
+		<section id="profiles" class="profiles">
+			<div class="profiles-details">
+				<div class="section-heading text-center">
+					<h2>profiles</h2>
+				</div>
+				<div class="container">
+					<div class="profiles-content">
+						<div class="row">
+							<div class="col-sm-4" style = "padding-right: 0px; padding-left: 0px;">
+								<a href="https://www.linkedin.com/in/Tanvich20/" target="_blank">
+								<div class="single-profile" style="border-left: 1px solid #b2c1ce">
+									<div class="profile-txt">
+										<i class="fa fa-linkedin fa-2x"></i>
+										<!-- <a href="https://www.linkedin.com/in/Tanvich20/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a> -->
+										<div class="profile-icon-name">Linkedin</div>
+									</div>
+									<a href="https://www.linkedin.com/in/Tanvich20/" target="_blank">
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="fa fa-linkedin fa-2x" style="color: white;"></i>
+											<!-- <a href="https://www.linkedin.com/in/Tanvich20/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a> -->
+											<div class="profile-icon-name">Linkedin</div>
+										</div>
+									</div></a>
+								</div></a>
+							</div>
+							<div class="col-sm-4" style = "padding-right: 0px; padding-left: 0px;">
+								<a href="https://github.com/Tanvich20" target="_blank">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<i class="flaticon-github-logo"></i>
+										<!-- <a href="https://github.com/Tanvich20" target="_blank"><i class="flaticon-github-logo"></i></a> -->
+										<div class="profile-icon-name">Github</div>
+									</div>
+									<a href="https://github.com/Tanvich20" target="_blank">
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="flaticon-github-logo" style="color: white;"></i>
+											<!-- <a href="https://github.com/Tanvich20" target="_blank"><i class="flaticon-github-logo"></i></a> -->
+											<div class="profile-icon-name">Github</div>
+										</div>
+									</div></a>
+								</div></a>
+							</div>
+							<div class="col-sm-4" style = "padding-right: 0px; padding-left: 0px;">
+								<a href="https://twitter.com/Tanvich20" target="_blank">
+								<div class="single-profile" >
+									<div class="profile-txt">
+										<i class="fa fa-twitter fa-2x"></i>
+										<div class="profile-icon-name">Twitter</div>
+									</div>
+									<a href="https://twitter.com/Tanvich20" target="_blank">
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="fa fa-twitter fa-2x" style="color: white;"></i>
+											<!-- <a href="https://twitter.com/Tanvich20" target="_blank"><i class="fa fa-twitter fa-2x"></i></a> -->
+											<div class="profile-icon-name">Twitter</div>
+										</div>
+									</div></a>
+								</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.profiles-->
+		<!--profiles end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form name = "form1" method="POST" action="https://getform.io/f/0e250602-25ef-433d-8bb7-7ed681f65f82" >
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" name="message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<input type="button" class="contact-btn" onclick="submit_form();" placeholder="Submit"> <p style="color: white;"> Submit</p>
+													<!-- <a class="contact-btn" href="#" role="button">submit</a> -->
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>Tanvi</h3>
+										<p>Software Test Engineer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>tanvich20@gmail.com</p>
+										</div>
+										<!-- <div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div> -->
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="https://github.com/Tanvich20" target="_blank"><i class="fa fa-github fa-2x"></i></a></li><!--/li-->
+										<li><a href="https://twitter.com/Tanvich20" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li><!--/li-->
+										<li><a href="https://www.linkedin.com/in/Tanvich20/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+	
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="js/custom.js"></script>
+        
+    </body>
+	
+</html>
